@@ -1,0 +1,106 @@
+.width-100 {
+  width: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  color: grey;
+  font-family: 'PT Sans', sans-serif;
+}
+.header {
+  width: 100%;
+  height: 75px;
+  background-color: lightseagreen;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+.header h1 {
+  margin: 0;
+  font-size: 48px;
+}
+.menu-button {
+  position: absolute;
+  left: 20px;
+  cursor: pointer;
+}
+.menu {
+  display: none;
+  position: fixed;
+  top: 75px;
+  left: 0;
+  width: 100px;
+  max-height: 100%;
+  z-index: 2;
+}
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding-inline-start: 0;
+}
+.menu ul li {
+  list-style-type: none;
+  font-size: 1rem;
+  padding: 5px 0;
+  text-align: center;
+  color: black;
+}
+.menu--open {
+  display: block;
+}
+.tabs {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 75px;
+}
+.tabs .topics {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+.tabs .topics .title {
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+.tabs .topics .tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: grey;
+  background-color: white;
+  margin: 0 5px;
+  padding: 2px 10px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.tabs .topics .tab:hover {
+  text-decoration: underline;
+}

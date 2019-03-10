@@ -1,0 +1,35 @@
+.menu-button {
+  position: absolute;
+  left: 20px;
+  cursor: pointer;
+}
+
+.menu {
+  display: none;
+  position: fixed;
+  top: 75px;
+  left: 0;
+  width: 100px;
+  max-height: 100%; 
+  // background-color: violet;
+  // border: 1px solid lightblue;
+  z-index: 2; 
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding-inline-start: 0;
+}
+.menu ul li{
+  list-style-type: none;
+  font-size: 1rem;
+  padding: 5px 0;
+  text-align: center;
+  color: black;
+}
+
+.menu--open {
+  display: block;
+}
