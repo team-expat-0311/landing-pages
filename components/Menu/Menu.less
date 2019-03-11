@@ -1,27 +1,28 @@
 .menu-button {
-  position: absolute;
-  left: 20px;
+  // position: absolute;
+  right: 20px;
+  width: 4rem;
+  background-color: grey;
+  border-radius: 50%;
   cursor: pointer;
+  margin: 1.2rem;
 }
 
 .menu {
   display: none;
   position: fixed;
-  top: 75px;
-  left: 0;
   width: 100px;
   max-height: 100%; 
-  // background-color: violet;
-  // border: 1px solid lightblue;
+  margin-top: 4rem;
+  margin-right: 0.7rem;
+  align-self: flex-end;
   z-index: 2; 
 }
 
 .menu ul {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
   padding-inline-start: 0;
 }
+
 .menu ul li{
   list-style-type: none;
   font-size: 1rem;
