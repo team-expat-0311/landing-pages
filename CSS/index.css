@@ -31,13 +31,22 @@ body {
   position: fixed;
   top: 10%;
   z-index: 2;
+  margin-top: -80px;
 }
-.header .space {
-  width: 100px;
+.header .search {
+  margin: 1rem;
+  width: 8rem;
+  height: 2rem;
+  border: 0.2rem solid black;
+}
+.header .search p {
+  align-self: center;
+  margin: 0.2rem;
 }
 .header h1 {
   height: 100%;
   font-size: 48px;
+  margin-left: -3rem;
 }
 .menu-button {
   right: 20px;
@@ -71,9 +80,14 @@ body {
   display: block;
 }
 .intro {
-  margin-top: 12rem;
+  width: 100%;
+  width: 96%;
+  margin-top: 5rem;
 }
 .intro h1 {
+  text-align: center;
+}
+.intro p {
   text-align: center;
 }
 .inner {
@@ -92,10 +106,16 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
 }
+.tiles a {
+  color: white;
+  text-decoration: none;
+}
 .style {
   width: 27%;
+  border-radius: 12%;
   margin: 1rem;
   padding: 1rem 1rem 4rem;
+  color: white;
 }
 .style h2 {
   text-align: center;
