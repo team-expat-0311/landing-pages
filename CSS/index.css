@@ -16,7 +16,7 @@ body {
   flex-direction: column;
   background-color: white;
   color: grey;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
 }
 .header {
   width: 100%;
@@ -110,9 +110,10 @@ body {
 }
 .intro p {
   text-align: center;
+  margin: 2rem;
 }
 .tiles {
-  max-width: 100%;
+  max-width: 80%;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -139,6 +140,7 @@ body {
   text-align: center;
   font-size: 1rem;
   margin-bottom: 1rem;
+  text-transform: uppercase;
 }
 .style .content {
   display: none;
