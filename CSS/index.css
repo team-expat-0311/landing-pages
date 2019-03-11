@@ -1,0 +1,150 @@
+.width-100 {
+  width: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  color: grey;
+  font-family: 'PT Sans', sans-serif;
+}
+.header {
+  width: 100%;
+  max-height: 7rem;
+  height: 100%;
+  color: black;
+  background-color: rgba(230, 225, 240, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+  position: fixed;
+  top: 10%;
+  z-index: 2;
+}
+.header .space {
+  width: 100px;
+}
+.header h1 {
+  height: 100%;
+  font-size: 48px;
+}
+.menu-button {
+  right: 20px;
+  width: 4rem;
+  background-color: grey;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 1.2rem;
+}
+.menu {
+  display: none;
+  position: fixed;
+  width: 100px;
+  max-height: 100%;
+  margin-top: 4rem;
+  margin-right: 0.7rem;
+  align-self: flex-end;
+  z-index: 2;
+}
+.menu ul {
+  padding-inline-start: 0;
+}
+.menu ul li {
+  list-style-type: none;
+  font-size: 1rem;
+  padding: 5px 0;
+  text-align: center;
+  color: black;
+}
+.menu--open {
+  display: block;
+}
+.intro {
+  margin-top: 12rem;
+}
+.intro h1 {
+  text-align: center;
+}
+.inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.tiles {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.style {
+  width: 27%;
+  margin: 1rem;
+  padding: 1rem 1rem 4rem;
+}
+.style h2 {
+  text-align: center;
+}
+.style1 {
+  background: rgba(232, 106, 161, 0.3);
+}
+.style2 {
+  background-color: #5979E8;
+}
+.style3 {
+  background-color: #57E9FF;
+}
+.style4 {
+  background-color: #FF579F;
+}
+.style5 {
+  background-color: #A5E860;
+}
+.style6 {
+  background-color: #AF71FF;
+}
+.style7 {
+  background-color: #E8D16A;
+}
+.style8 {
+  background-color: #71ADFF;
+}
+.style9 {
+  background-color: #E86AA1;
+}
+.style10 {
+  background-color: #8EB7E8;
+}
+.style11 {
+  background-color: #71FFF0;
+}
+.style12 {
+  background-color: #65FFD5;
+}
+.style13 {
+  background-color: #8D6AE8;
+}
+.style14 {
+  background-color: #FF0000;
+}
+.style15 {
+  background-color: #DA65FF;
+}
+.style16 {
+  background-color: #FF7105;
+}
