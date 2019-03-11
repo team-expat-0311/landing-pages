@@ -35,13 +35,16 @@ body {
 .header .search {
   display: none;
   margin: 1rem;
-  width: 8rem;
-  height: 2rem;
-  border: 0.2rem solid black;
+  width: 5rem;
+  height: 1.3rem;
+  border: 0.08rem solid black;
+  opacity: 0.7;
+  align-self: flex-start;
 }
 .header .search p {
   align-self: center;
   margin: 0.2rem;
+  font-size: 0.8rem;
 }
 .header h1 {
   display: none;
@@ -51,7 +54,7 @@ body {
 }
 .menu-button {
   right: 20px;
-  width: 4rem;
+  width: 40%;
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 50%;
   cursor: pointer;
@@ -63,13 +66,13 @@ body {
   width: 100px;
   max-height: 100%;
   margin-top: 6rem;
-  margin-right: 0.7rem;
+  margin-right: 0.3rem;
   align-self: flex-end;
   z-index: 2;
 }
 .menu ul {
   padding-inline-start: 0;
-  margin-right: 1rem;
+  margin-right: 0.6rem;
 }
 .menu ul li {
   list-style-type: none;
@@ -99,7 +102,7 @@ body {
 .intro {
   width: 100%;
   width: 92%;
-  margin-top: 1rem;
+  margin-top: 3rem;
 }
 .intro h1 {
   text-align: center;
@@ -147,31 +150,67 @@ body {
   font-size: 0.6rem;
 }
 .style1 {
-  background: #e86aa1;
+  background: rgba(232, 106, 161, 0.5);
+}
+.style1 img {
+  display: none;
+  width: 100%;
 }
 .style2 {
   background-color: #eb9fef;
 }
+.style2 img {
+  display: none;
+  width: 100%;
+}
 .style3 {
   background-color: #9bb1ff;
+}
+.style3 img {
+  display: none;
+  width: 100%;
 }
 .style4 {
   background-color: #9cb2cc;
 }
+.style4 img {
+  display: none;
+  width: 100%;
+}
 .style5 {
   background-color: #9ce6cc;
+}
+.style5 img {
+  display: none;
+  width: 100%;
 }
 .style6 {
   background-color: #9b58ff;
 }
+.style6 img {
+  display: none;
+  width: 100%;
+}
 .style7 {
   background-color: #eb5def;
+}
+.style7 img {
+  display: none;
+  width: 100%;
 }
 .style8 {
   background-color: #4499ea;
 }
+.style8 img {
+  display: none;
+  width: 100%;
+}
 .style9 {
   background-color: #7ed37b;
+}
+.style9 img {
+  display: none;
+  width: 100%;
 }
 footer {
   width: 100%;
