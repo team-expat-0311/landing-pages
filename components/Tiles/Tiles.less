@@ -1,25 +1,37 @@
 
-.intro {
-.width-100();
-width: 96%;
-margin-top: 5rem;
 
-  h1 {
-    text-align: center;
-  }
-
-  p {
-    text-align: center;
-  }
-
-}
-
-
+// the whole container for inner elements
 .inner {
+  .width-100();
   .flex(center, center, row);
+  margin-left: 3rem;
   flex-wrap: wrap;
+  width: 85%;
   
 }
+
+// intro paragraph
+.intro {
+  .width-100();
+  width: 92%;
+  margin-top: 1rem;
+  
+    h1 {
+      text-align: center;
+      margin: 3rem;
+    }
+  
+    h2 {
+      text-align: center;
+    }
+  
+    p {
+      text-align: center;
+    }
+  
+  }
+
+  // All of the boxes
 
 .tiles {
   max-width: 100%;
@@ -27,25 +39,35 @@ margin-top: 5rem;
   .flex(space-around, center, row);
   flex-wrap: wrap;
 
+// all content in boxes is wrapped in a 'a' reference tag
   a {
     color: white;
     text-decoration: none;
+    .flex(center, center, column);
   }
-  
 }
 
+// controls the style of all individual boxes
 .style {
-  width: 27%;
-  border-radius: 12%;
-  margin: 1rem;
-  padding: 1rem 1rem 4rem;
+  width: 30%;
+  border-radius: 3%;
+  margin: .3rem;
+  padding: 1rem 1rem 1rem;
   color: white;
   
   h2 {
     text-align: center;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .content {
+    display: none;
+    font-size: .6rem;
   }
 }
 
+// Individual box colors
 .style1 {
    background: rgba(232, 106, 161, 0.3);
   }
