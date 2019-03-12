@@ -7,6 +7,12 @@
   margin-left: 3rem;
   flex-wrap: wrap;
   width: 85%;
+
+  @media @mobile {
+    .flex(flex-start, center, column);
+    width: 100%;
+    margin:0; 
+  }
   
 }
 
@@ -15,10 +21,44 @@
   .width-100();
   width: 92%;
   margin-top: 3rem;
+
+  a {
+    text-decoration: none;
+    color: grey;
+  }
+
+  @media @mobile {
+    .flex(center, center, column);
+    margin-top: 10rem;
+  }
+
+  .intro-button {
+    display: none;
+
+    @media @mobile {
+      display: block;
+      align-self: center;
+      margin: 2rem;
+
+      button {
+        border-radius: 20%;
+        width: 100%;
+        height: 5rem;
+        font-size: 2rem;
+        background-color: rgba(126, 211, 123, 1);
+        color: white;
+      }
+    }
+  }
   
     h1 {
       text-align: center;
       margin: 3rem;
+
+      @media @mobile {
+        display: none;
+      }
+
     }
   
     h2 {
@@ -28,11 +68,15 @@
     p {
       text-align: center;
       margin: 2rem;
+
+      @media @mobile {
+        display: none
+      }
     }
   
   }
 
-  // All of the boxes
+  // parent container holding boxes
 
 .tiles {
   max-width: 80%;
@@ -55,6 +99,11 @@
   margin: .3rem;
   padding: 1rem 1rem 1rem;
   color: white;
+
+  @media @mobile {
+    width: 100%;
+    margin-top: 2rem;
+  }
   
   h2 {
     text-align: center;
@@ -108,19 +157,31 @@
       display: none;
       width: 100%;
     }
+    @media @mobile {
+      display: none
+    }
   }
+
 .style6 {
     background-color: rgba(155, 88, 255, 1);
     img {
       display: none;
       width: 100%;
     }
+
+    @media @mobile {
+      display: none
+    }
   }
+
 .style7 {
     background-color: rgba(235, 93, 239, 1);
     img {
       display: none;
       width: 100%;
+    }
+    @media @mobile {
+      display: none
     }
   }
   
@@ -130,12 +191,19 @@
       display: none;
       width: 100%;
     }
+    @media @mobile {
+      display: none
+    }
   }
+
 .style9 {
     background-color: rgba(126, 211, 123, 1);
     img {
       display: none;
       width: 100%;
+    }
+    @media @mobile {
+      display: none
     }
   }
 /// lets mess around with images

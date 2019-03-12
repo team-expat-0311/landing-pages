@@ -9,7 +9,16 @@
   top: 10%;
   z-index: 2;
   margin-top: -2rem; 
-  
+
+  @media @mobile {
+    max-width: 100%;
+    .flex(center, space-between, column-reverse);
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+    
 
   .search {
     display: none;
@@ -33,6 +42,11 @@
     height:100%;
     font-size: 48px;
     margin-left: -3rem;
+
+    @media @mobile {
+      display: block;
+      margin: 1rem;
+    }
   }
 
 }

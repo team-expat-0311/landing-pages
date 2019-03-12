@@ -6,6 +6,10 @@
   border-radius: 50%;
   cursor: pointer;
   margin: 1.6rem;
+
+  @media @mobile {
+    display: none;
+  }
 }
 
 .menu {
@@ -17,11 +21,28 @@
   margin-right: 0.3rem;
   align-self: flex-end;
   z-index: 2; 
+
+  @media @mobile {
+    display: inline-block;
+    margin: 0;
+    width: 100%;
+    position: relative;
+    align-self: center;
+    min-height: 10%;
+
+  }
 }
 
 .menu ul {
   padding-inline-start: 0;
   margin-right: .6rem;
+  
+    @media @mobile {
+    .flex(center, space-between, column);
+    margin-top: 0;
+    width: 102%;
+    
+  }
 }
 
 .menu ul li{
@@ -30,6 +51,7 @@
   padding: 5px 0;
   text-align: center;
   color: black;
+  margin: .2rem;
 
     a {
       color: black;
@@ -37,7 +59,40 @@
       text-decoration: none;
     }
 
+    @media @mobile {
+      background-color: white;
+      margin: 0;
+      padding: 1rem;
+    }
+
 }
+
+.ul1{
+  
+  @media @mobile {
+  border-top: .05rem solid black;
+  width: 100%;
+  }
+}
+
+.ul2{
+  
+  @media @mobile {
+  border-top: .05rem solid black;
+  border-bottom: .05rem solid black;
+  width: 100%;
+  }
+}
+
+.ul3{
+  
+  @media @mobile {
+  border-bottom: .05rem solid black;
+  width: 100%;
+  }
+}
+
+
 
 .menu--open {
   display: block;

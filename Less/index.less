@@ -1,14 +1,18 @@
 @import './Less/variables';     
 @import './Less/mixins';                  
-                          
-   
-* {       
+                                  
+            
+* {        
   box-sizing: border-box;   
-}   
+}    
  
 html, body {                            
   margin: 0;          
-  padding: 0;                                             
+  padding: 0; 
+
+  @media @mobile {
+    width: 100%;
+  }                                          
 }                                             
                         
 body {  
@@ -18,9 +22,14 @@ body {
   font-family: "Source Sans Pro", Helvetica, sans-serif; 
   max-width: 100rem;
   width: 90%;   
-}
- 
+
+  @media @mobile {
+    width: 100%      
+  }         
+}                                                     
+   
 @import './components/Header/Header';
-@import './components/Menu/Menu';  
-@import './components/Tiles/Tiles';
+@import './components/Menu/Menu';   
+@import './components/Tiles/Tiles'; 
 @import './components/Footer/Footer';         
+                                               
