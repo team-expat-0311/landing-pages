@@ -1,6 +1,7 @@
 
 
 // the whole container for inner elements
+
 .inner {
   // .test();
   .width-100();
@@ -14,6 +15,28 @@
     width: 100%;
     margin:0; 
   }
+
+  .cta {
+    .flex(center, center, row);
+    width: 100%;
+    top: 16%;
+    left: 4%;
+    position: absolute;
+    font-size: 1.6rem;
+
+    @media @mobile { 
+      display: none; 
+    } 
+
+    a {
+      text-decoration: none;
+      color: black;
+      cursor: pointer;
+      border-bottom: 1px solid black;
+      border-width: 2px;
+      
+    }
+  }
   
 }
 
@@ -24,7 +47,7 @@
   width: 100%;
   .flex(center, flex-start, column);
   width: 92%;
-  margin-top: 10rem;
+  margin-top: 8rem;
 
   a {
     text-decoration: none;
@@ -34,16 +57,22 @@
   @media @mobile {
     .flex(center, center, column);
     margin-top: 10rem;
+
+    h2 {
+      text-align: center;
+    }
+
+
   }
 
   .intro-button {
-    // display: none;
     .flex(center, center, column);
     width: 100%;
 
     button {
+      display: none;
       border-radius: 15%;
-      width: 10rem;
+      width: 20rem;
       height: 4rem;
       font-size: 1.6rem;
       background-color: #E3E3E8;
@@ -57,15 +86,20 @@
       display: block;
       align-self: center;
       margin: 2rem;
+      border-radius: 15%;
+      width: 10rem;
+      height: 4rem;
+      font-size: 1.6rem;
+      background-color: #E3E3E8;
+      color: Black;
+      align-self: center;
+      cursor: pointer;
       }
 
     }
   }
   
     h1 {
-      // .test();
-      // text-align: center;
-      // margin: 3rem;
       color: black;
 
       @media @mobile {
@@ -114,7 +148,7 @@
     font-size: 1rem;
     margin-bottom: 1rem;
     text-transform: uppercase;
-    z-index: 2;
+    // z-index: 2;
     
   }
 
@@ -137,6 +171,7 @@
     width: 100%;
     margin: 0;
     border-radius: 3%;
+    z-index: 2;
     
   }
   .color1 {
@@ -144,7 +179,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 98%;
     position: absolute;
     background: rgba(232, 106, 161, .5);
     border-radius: 3%;
@@ -174,7 +209,7 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 100%;
+      height: 98%;
       position: absolute;
       background: rgba(235, 159, 239, .5);
       border-radius: 3%;
@@ -203,7 +238,7 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 100%;
+      height: 98%;
       position: absolute;
       background: rgba(155, 177, 255, .5);
       border-radius: 3%;
@@ -232,9 +267,9 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 100%;
+      height: 98%;
       position: absolute;
-      background: rgba(156, 178, 204, 1);
+      background: rgba(156, 178, 204, .5);
       border-radius: 3%;
       &:hover {
         opacity: 0;
@@ -262,9 +297,9 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 100%;
+      height: 98%;
       position: absolute;
-      background: rgba(156, 230, 204, 1);
+      background: rgba(156, 230, 204, .5);
       border-radius: 3%;
       &:hover {
         opacity: 0;
@@ -294,9 +329,9 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 100%;
+      height: 98%;
       position: absolute;
-      background: rgba(155, 88, 255, 1);
+      background: rgba(155, 88, 255, .5);
       border-radius: 3%;
       &:hover {
         opacity: 0;
@@ -326,9 +361,9 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 100%;
+      height: 98%;
       position: absolute;
-      background: rgba(235, 93, 239, 1);
+      background: rgba(235, 93, 239, .5);
       border-radius: 3%;
       &:hover {
         opacity: 0;
@@ -358,9 +393,9 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 100%;
+      height: 98%;
       position: absolute;
-      background: rgba(68, 153, 234, 1);
+      background: rgba(68, 153, 234, .5);
       border-radius: 3%;
       &:hover {
         opacity: 0;
@@ -391,9 +426,9 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 98%;
     position: absolute;
-    background: rgba(126, 211, 123, 1);
+    background: rgba(126, 211, 123, .5);
     border-radius: 3%;
     &:hover {
       opacity: 0;
