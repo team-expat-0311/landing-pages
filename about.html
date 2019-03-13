@@ -4,16 +4,21 @@
   <meta charset="utf-8">
       <title>About Expat Team</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
       <link rel="stylesheet" type="text/css" media="screen" href="./CSS/index.css" />
       
       <script src="./components/Menu/Menu.js" async></script>
+      <script src="./components/Tabs/Tabs.js" async></script>
      
 </head>
 
 <body>
   <div class="container">
     <div class="header">
+        <div>
+            <i class="fas fa-bars menu-button"></i>
+        </div>
       <div class="menu">
           <ul>
               <li class='ul1'><a href="index.html">Home</a></li>
@@ -21,9 +26,7 @@
               <li class='ul3'><a href="#">Log in</a></li>
             </ul>
         </div>
-      <div>
-        <i class="fas fa-bars menu-button"></i>
-      </div>
+      
       <div class='pain'>
           <h1><i class="fas fa-globe-americas"> Expat</i></h1>
       </div>
@@ -42,72 +45,105 @@
             <p>Etiam quis viverra lorem, in semper lorem. Sed nisl arcu euismod sit amet nisi euismod sed cursus arcu elementum ipsum arcu vivamus quis venenatis orci lorem ipsum et magna feugiat veroeros aliquam. Lorem ipsum dolor sit amet nullam dolore.</p>
           </div>
 
-          <section class="tiles">
+          <div class="section">
 
-              <article class="style about-style1">
-                <span class="image">
-                  <img src="assets/expats.jpg" alt="" />
-                </span>
-                <a href="#">
-                    <h3>Region</h3>
-                  <div class="content">
-                    <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+              <div class="tabs">
+                <div class="tabs-links">
+                  <div class="tabs-link tabs-link-selected" data-tab="LeadDev">Lead</div>
+                  <div class="tabs-link" data-tab="FrontEnd1">Front-end 1</div>
+                  <div class="tabs-link" data-tab="FrontEnd2">Front-end 2</div>
+                  <div class="tabs-link" data-tab="BackEnd">Back-end</div>
+                  <div class="tabs-link" data-tab="UI">UI</div>
+                </div>
+      
+                <div class="tabs-items">
+      
+                  <div class="tabs-item tabs-item-selected" data-tab="LeadDev">
+                    <div class="tabs-item-title">Dennis Orbison</div>
+                    <div class="tabs-item-description"><h3>
+                      Lead Developer</h3><h4></h4>
+                    </div>
+                    
+                      <img src="assets/Dennis.jpg" alt="">
+                 
+                    <div class="tabs-item-description">
+                        Curiously enough, the only thing that went through the mind of the bowl of petunias as it fell was Oh no, not again. Many
+                        people have speculated that if we knew exactly why the bowl of petunias had thought that we would know a lot more about the
+                        nature of the Universe than we do now.
+                      </div>
                   </div>
-                </a>
-              </article>
+      
+                  <div class="tabs-item tabs-item-selected" data-tab="FrontEnd1">
+                    <div class="tabs-item-title">Francis Chen</div>
 
-              <article class="style about-style2">
-                <span class="image">
-                  <img src="assets/region.jpg"  alt="" />
-                </span>
-                <a href="#">
-                  <h3>Region</h3>
-                  <div class="content">
-                    <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+                    <div class="tabs-item-description"><h3>
+                        Front-end Developer</h3><h4>San Francisco, Ca</h4>
+                      </div>
+                      
+                        <img src="assets/Francis.jpg" alt="">
+
+                    <div class="tabs-item-description">
+                      Curiously enough, the only thing that went through the mind of the bowl of petunias as it fell was Oh no, not again. Many
+                      
+                    </div>
                   </div>
-                </a>
-              </article>
-              <article class="style about-style3">
-                <span class="image">
-                  <img src="assets/latest.jpg" alt="" />
-                </span>
-                <a href="#">
-                    <h3>Region</h3>
-                  <div class="content">
-                    <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+      
+      
+                  <div class="tabs-item tabs-item-selected" data-tab="FrontEnd2">
+                    <div class="tabs-item-title">Laryna BillinghurstLas</div>
+
+                    <div class="tabs-item-description"><h3>
+                        Front-end Developer</h3><h4>Las Vegas, NV</h4>
+                      </div>
+                      
+                        <img src="assets/Laryna.jpg" alt="">
+
+                    <div class="tabs-item-description">
+                        Mission: to explore strange new code languages, to seek out new life and new technology, to boldly go where no one has gone before.
+                      
+                    </div>
                   </div>
-                </a>
-              </article>
-              <article class="style about-style4">
-                <span class="image">
-                  <img src="assets/popular.jpg" alt="" />
-                </span>
-                <a href="#">
-                    <h3>Region</h3>
-                  <div class="content">
-                    <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+                  
+                  <div class="tabs-item tabs-item-selected" data-tab="BackEnd">
+                    <div class="tabs-item-title">Daniel Weinman</div>
+
+                    <div class="tabs-item-description"><h3>
+                        Back-end Developer</h3><h4>Boston, MA</h4>
+                      </div>
+                      
+                        <img src="assets/Daniel.jpg" alt="">
+
+                    <div class="tabs-item-description">
+                      There is a theory which states that if ever anyone discovers exactly what the Universe is for and why it is here, it will
+                      
+                    </div>
                   </div>
-                </a>
-              </article>
-              <article class="style about-style5">
-                <span class="image">
-                  <img src="assets/expats.jpg" alt="" />
-                </span>
-                <a href="#">
-                    <h3>Region</h3>
-                  <div class="content">
-                    <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-                  </div>
-                </a>
-              </article>
-            </section>
+
+                  <div class="tabs-item tabs-item-selected" data-tab="UI">
+                      <div class="tabs-item-title">Pat Palmerston</div>
+
+                      <div class="tabs-item-description"><h3>
+                          User Interface</h3><h4>Petaluma, Ca</h4>
+                        </div>
+                        
+                          <img src="assets/Pat.jpg" alt="">
+
+                      <div class="tabs-item-description">
+                        Hailing from the Northern Bay Area. Pat is a Lambda Student who strives to be the best Dad, father, Son and Brother he can be. Besides Coding at Lambda he enjoys teaching Martial Arts and American History.
+                      </div>
+                    </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
 
 
           <!-- Footer -->
 					<footer id="footer">
               <div class="inner-footer">
                
-                <section>
+                <section class='footer-about'>
                   <h2>Follow</h2>
                   <ul class="icons">
                     <li><a href="#" class="icon"><i class="fab fa-twitter"></i></a></li>
