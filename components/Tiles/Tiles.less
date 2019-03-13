@@ -1,28 +1,38 @@
 
-
+.container {
+  @media @mobile { 
+    max-width: 100%;  
+    width: 100%; 
+  }
+}
 // the whole container for inner elements
 
 .inner {
-  // .test();
   .width-100();
+  margin: 0 auto;
   .flex(center, center, row);
   margin-left: 3rem;
   flex-wrap: wrap;
   width: 85%;
 
   @media @mobile {
-    .flex(flex-start, center, column);
+    .flex(center, center, column);
     width: 100%;
     margin:0; 
   }
 
   .cta {
     .flex(center, center, row);
-    width: 100%;
-    top: 16%;
-    left: 4%;
+    width: 70%;
+    top: 8%;
+    left: 20%;
     position: absolute;
     font-size: 1.6rem;
+
+    strong {
+      font-weight: bold;
+      color: black;
+    }
 
     @media @mobile { 
       display: none; 
@@ -47,7 +57,7 @@
   width: 100%;
   .flex(center, flex-start, column);
   width: 92%;
-  margin-top: 8rem;
+  margin-top: 5rem;
 
   a {
     text-decoration: none;
@@ -57,9 +67,16 @@
   @media @mobile {
     .flex(center, center, column);
     margin-top: 10rem;
+    max-width: 100%;
+    width: 100%;
 
     h2 {
       text-align: center;
+      width: 80%;
+    }
+
+    p {
+      display: none;
     }
 
 
@@ -118,6 +135,10 @@
   .flex(space-around, center, row);
   flex-wrap: wrap;
 
+  @media @mobile { 
+    max-width: 100%;  
+    width: 100%; 
+  }
 
 
 // all content in boxes is wrapped in a 'a' reference tag
@@ -137,6 +158,7 @@
 
 
   @media @mobile {
+    max-width: 100%;
     width: 100%;
     margin-top: 2rem;
   }
@@ -155,6 +177,11 @@
   .content {
     display: none;
     font-size: .6rem;
+
+    @media @mobile { 
+      max-width: 100%;  
+      width: 100%; 
+    }
   }
 }
 

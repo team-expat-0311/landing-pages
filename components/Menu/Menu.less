@@ -6,7 +6,8 @@
   // border-radius: 50%;
   cursor: pointer;
   margin: 1.6rem;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
+  right: 20%;
 
   @media @mobile {
     display: none;
@@ -18,8 +19,8 @@
   position: fixed;
   width: 100px;
   max-height: 100%; 
-  margin-top: 7rem; 
-  margin-left: 0.2rem;
+  margin-top: 3.6rem; 
+  right: 4%;
   align-self: flex-end;
   z-index: 2; 
   
@@ -27,6 +28,7 @@
   @media @mobile {
     display: inline-block;
     margin: 0;
+    max-width: 100%;
     width: 100%;
     position: relative;
     align-self: center;
@@ -37,28 +39,31 @@
 
 .menu ul {
   padding-inline-start: 0;
-  margin-right: .6rem;
+  right: 2%;
   
     @media @mobile {
     .flex(center, space-between, column);
     margin-top: 0;
-    width: 102%;
+    max-width: 100%;
+    width: 100%;
+    left: -10%;
+    
     
   }
 }
 
 .menu ul li{
   list-style-type: none;
-  font-size: 1.3rem;
+  font-size: .8rem;
   padding: 5px 0;
   text-align: center;
   color: black;
-  margin: .2rem;
+  // margin: .2rem;
   font-style: "Source Sans Pro", Helvetica, sans-serif;
 
     a {
       color: black;
-      margin-top: 1rem;
+      // margin-top: 1rem;
       text-decoration: none;
     }
 
@@ -67,6 +72,10 @@
       margin: 0;
       padding: 1rem;
       background-color: #EDF0EE;
+      max-width: 100%;
+      width: 100%;
+
+      
     }
 
 }
@@ -74,7 +83,8 @@
 .ul1{
   
   @media @mobile {
-  border-top: .05rem solid black;
+  border: 2px solid black;
+  max-width: 100%;
   width: 100%;
   }
 }
@@ -82,8 +92,8 @@
 .ul2{
   
   @media @mobile {
-  border-top: .05rem solid black;
-  border-bottom: .05rem solid black;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
   width: 100%;
   }
 }
@@ -91,7 +101,7 @@
 .ul3{
   
   @media @mobile {
-  border-bottom: .05rem solid black;
+  border: 2px solid black;
   width: 100%;
   }
 }
