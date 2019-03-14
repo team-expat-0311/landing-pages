@@ -4,6 +4,17 @@
     // max-width: 100%;  
     width: 100%; 
   }
+
+  .button1 {
+    position: relative;
+    .custom-button(100px);
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    width: 40%;
+    
+    
+  }
 }
 
 
@@ -38,7 +49,11 @@
     color: grey;
   }
 
-  
+  h3 {
+   
+    text-align: center;
+    width: 90%;
+  }
 
   @media @mobile {
     .flex(center, center, column);
@@ -49,6 +64,10 @@
       text-align: center;
       width: 80%;
       margin-top: 7rem;
+
+      @media @mobile {
+        margin-top: 3rem;
+      }
     }
 
     p {
@@ -132,7 +151,7 @@
 }
 
 // Individual box colors
-.style1 {
+.sstyle1 {
 
   &:hover {
     transform: scale(1.1);
@@ -163,7 +182,7 @@
 }
 
   
-  .style2 {
+  .sstyle2 {
   
     &:hover {
       transform: scale(1.1);
@@ -192,7 +211,7 @@
     }
   }
 
-  .style3 {
+  .sstyle3 {
   
     &:hover {
       transform: scale(1.1);
@@ -221,7 +240,7 @@
     }
   }
 
-  .style4 {
+  .sstyle4 {
   
     &:hover {
       transform: scale(1.1);
@@ -251,7 +270,7 @@
   }
 
 
-  .style5 {
+  .sstyle5 {
   
     &:hover {
       transform: scale(1.1);
@@ -283,7 +302,7 @@
     }
   }
 
-  .style6 {
+  .sstyle6 {
   
     &:hover {
       transform: scale(1.1);
@@ -315,7 +334,7 @@
     }
   }
 
-  .style7 {
+  .sstyle7 {
   
     &:hover {
       transform: scale(1.1);
@@ -347,7 +366,7 @@
     }
   }
 
-  .style8 {
+  .sstyle8 {
   
     &:hover {
       transform: scale(1.1);
@@ -380,7 +399,7 @@
     }
   }
 
-.style9 {
+.sstyle9 {
 
   &:hover {
     transform: scale(1.1);
@@ -420,54 +439,3 @@
 
 
 
-  // .intro-button {
-  //   .flex(center, center, column);
-  //   margin: 0 auto;
-  //   max-width: 100%;
-  //   position: absolute;
-  //   right: 30%;
-  //   top: 14%;
-
-  //     @media @mobile {
-  //       left: -70%;
-  //       bottom: -42%;
-  //       position: absolute;
-  //       margin-bottom: 5rem;
-  //       margin-left: 7rem;
-  //       // align-self: center;
-  //     }
-    
-  //   button {
-      
-  //       background-color: rgba(0, 0, 0, 0.7);
-  //       color: rgba(249, 255, 253, 0.9);
-  //       margin: 10px 30px 20px;
-  //       cursor: pointer; 
-  //       width: 7rem;
-  //       height: 3rem; 
-  //       font-size: 1rem;
-  //       border-radius: 10px;
-         
-  //         button:active {  
-  //         background-color: rgba(249, 255, 253, 0.9);
-  //         color: rgba(0, 0, 0, 0.7);
-        
-  //     } 
-  //   }
-
-
-  //   @media @mobile {
-  //     button {
-  //     position: absolute;
-  //     border-radius: 15%;
-  //     width: 10rem;
-  //     height: 4rem;
-  //     font-size: 1.6rem;
-  //     // align-self: center;
-  //     margin: 0 auto;
-  //     // bottom: 50%;
-      
-  //     }
-
-  //   }
-  // }

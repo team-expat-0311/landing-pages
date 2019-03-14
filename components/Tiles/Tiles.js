@@ -4,4 +4,4 @@ console.log('hello')
 
 
 
-TweenMax.staggerFrom('.style', 2, {opacity:0, y:200, rotation:360, delay: 0.5}, 0.2)
+TweenMax.staggerFrom('.style', 2, {opacity:0, y:200, delay: 0.5}, 0.2)

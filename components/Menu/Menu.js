@@ -33,6 +33,16 @@ allIntroH2.addEventListener('mouseleave', function(event){
   event.target.style.color ='grey';
 })
 
+const allIntroH3 = document.querySelector('.intro h3');
+
+allIntroH3.addEventListener('mouseenter', function(event){
+  event.target.style.color ='black';
+})
+
+allIntroH3.addEventListener('mouseleave', function(event){
+  event.target.style.color ='grey';
+})
+
 const allIntroP = document.querySelector('.intro p');
 
 allIntroP.addEventListener('mouseenter', function(event){
