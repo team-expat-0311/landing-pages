@@ -19,3 +19,6 @@ const menu = document.querySelector('.menu');
 const menuButton = document.querySelector('.menu-button');
 // menuButton reference, click handler that calls toggleMenu
 menuButton.addEventListener('click', togglefunction);
+
+
+// TweenMax.to('.menu-button', 2, {opacity:0, scale:0, Bounce});

@@ -7,6 +7,27 @@
 }
 // the whole container for inner elements
 
+.cta {
+ position: absolute;
+ right: 30%;
+ bottom: 80%;
+  button {
+    .custom-button();
+    height: 3rem;
+    cursor: pointer; 
+    }
+
+  @media @mobile { 
+    display: none; 
+  } 
+
+  a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer; 
+  }
+}
+
 .inner {
   .width-100();
   margin: 0 auto;
@@ -21,33 +42,6 @@
     margin:0; 
   }
 
-  .cta {
-    // .test();
-    .flex(center, center, row);
-    width: 10%;
-    top: 12%;
-    left: 55%;
-    position: absolute;
-    font-size: 1.6rem;
-    font-weight: bold;
-    text-align: center;
-
-    button {
-      .custom-button();
-      
-
-      }
-
-    @media @mobile { 
-      display: none; 
-    } 
-
-    a {
-      text-decoration: none;
-      color: black;
-      cursor: pointer; 
-    }
-  }
   
 }
 
@@ -67,7 +61,7 @@
 
   @media @mobile {
     .flex(center, center, column);
-    margin-top: 10rem;
+    margin-top: 11rem;
     max-width: 100%;
     width: 100%;
 
@@ -91,32 +85,14 @@
       visibility: hidden;
     }
 
-    // button {
-    //   display: none;
-    //   // border-radius: 15%;
-    //   // width: 20rem;
-    //   // height: 4rem;
-    //   // font-size: 1.6rem;
-    //   // background-color: #E3E3E8;
-    //   // color: Black;
-    //   // align-self: center;
-    //   // cursor: pointer;
-      
-    
-    // }
 
     @media @mobile {
       button {
-        visibility: visible;
-      // display: block;
-      // align-self: center;
-      // margin: 2rem;
+      visibility: visible;
       border-radius: 15%;
       width: 10rem;
       height: 4rem;
       font-size: 1.6rem;
-      // background-color: #E3E3E8;
-      // color: Black;
       align-self: center;
       cursor: pointer;
       }

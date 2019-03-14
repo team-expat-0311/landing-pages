@@ -58,10 +58,10 @@ body {
     justify-content: center;
     align-items: space-between;
     flex-direction: column-reverse;
-    position: relative;
+    position: absolute;
     margin-top: 2rem;
     text-align: center;
-    right: 20%;
+    top: -10%;
   }
 }
 .header h1 {
@@ -80,6 +80,9 @@ body {
     width: 100%;
     top: 10%;
     text-align: center;
+  }
+  .header h1 .fas {
+    margin-bottom: 1rem;
   }
 }
 .menu-button {
@@ -183,6 +186,35 @@ body {
     width: 100%;
   }
 }
+.cta {
+  position: absolute;
+  right: 30%;
+  bottom: 80%;
+}
+.cta button {
+  background-color: black;
+  color: white;
+  margin: 10px 30px 20px;
+  width: 100px;
+  font-size: 1rem;
+  border-radius: 10px;
+  height: 3rem;
+  cursor: pointer;
+}
+.cta button:hover {
+  background-color: white;
+  color: black;
+}
+@media ( max-width: 515px ) {
+  .cta {
+    display: none;
+  }
+}
+.cta a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
 .inner {
   width: 100%;
   margin: 0 auto;
@@ -204,42 +236,6 @@ body {
     margin: 0;
   }
 }
-.inner .cta {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  width: 10%;
-  top: 12%;
-  left: 55%;
-  position: absolute;
-  font-size: 1.6rem;
-  font-weight: bold;
-  text-align: center;
-}
-.inner .cta button {
-  background-color: black;
-  color: white;
-  margin: 10px 30px 20px;
-  cursor: pointer;
-  width: 100px;
-  font-size: 1rem;
-  border-radius: 10px;
-}
-.inner .cta button:hover {
-  background-color: white;
-  color: black;
-}
-@media ( max-width: 515px ) {
-  .inner .cta {
-    display: none;
-  }
-}
-.inner .cta a {
-  text-decoration: none;
-  color: black;
-  cursor: pointer;
-}
 .intro {
   max-width: 80%;
   width: 100%;
@@ -260,7 +256,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 10rem;
+    margin-top: 11rem;
     max-width: 100%;
     width: 100%;
   }
@@ -646,6 +642,9 @@ footer {
     margin: 0;
     border-top: 0.5rem solid black;
   }
+  .footer-about h2 {
+    display: none;
+  }
 }
 .style {
   width: 30%;
@@ -674,6 +673,11 @@ footer {
 .style .content {
   display: none;
   font-size: 0.6rem;
+}
+@media ( max-width: 515px ) {
+  .aboutH2 {
+    margin-top: 5rem;
+  }
 }
 @media ( max-width: 515px ) {
   .aboutArticle {
@@ -737,6 +741,7 @@ body {
 }
 .section .tabs .tabs-item {
   display: none;
+  max-width: 100%;
   width: 75%;
 }
 @media ( max-width: 515px ) {
