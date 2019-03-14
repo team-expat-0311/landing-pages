@@ -1,5 +1,5 @@
 
- TweenMax.from('.fa-globe-americas', 4, {x:600, ease:Bounce.easeOut});
+ TweenMax.from('.fa-globe-americas', 4, {opacity: 0, top:600, delay:1});
 console.log('hello')
 
 
