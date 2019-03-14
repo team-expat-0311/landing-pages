@@ -50,12 +50,16 @@
       .tabs-item-title {
         font-size: 24px;
         font-weight: bold;
-        margin-top: 1rem;
+        margin-top: .1rem;
       }
 
       .tabs-item-title {
         font-size: 2.5rem;
         text-align: center;
+
+        &:hover {
+          transform: scale(1.2);
+        }
           
         @media @mobile {
             font-size: 2rem;
@@ -71,6 +75,12 @@
         width: 30%;
         align-self: center;
         margin: 1rem;
+        border-radius: 50%;
+        border: 2px solid silver;
+
+        &:hover {
+          transform: scale(1.2);
+        }
 
         @media @mobile {
           width: 90%;
@@ -84,6 +94,12 @@
         width: 80%;
         text-align: center;
         font-size: 1rem;
+        color: black;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+
           @media @mobile {
             margin-top: .5rem;
             margin-bottom: .5rem; 

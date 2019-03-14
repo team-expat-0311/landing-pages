@@ -46,3 +46,8 @@ links.forEach(function(link){
   return new MyLink(link);
 });
 
+
+TweenMax.staggerFrom('.tabs-link', 2, {opacity:0, y:300, delay: 0.0}, 0.2)
+
+TweenMax.from('.tabs-items', 4, {x:1000, delay: 1.5, ease:Bounce.easeOut});
+
