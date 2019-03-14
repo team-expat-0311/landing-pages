@@ -8,6 +8,7 @@
     width: 100%;
   }
 
+
   .tabs {
     width: 100%;
     height: 100%;
@@ -28,6 +29,7 @@
         @media @mobile {
           .flex(center, center);
         }
+
     }
 
     .tabs-item {
@@ -36,11 +38,13 @@
       width: 75%;
 
         @media @mobile {
-          display: none;
+          .flex(center, center, column);
           width: 100%;
           text-align: center;
+          .test();
           
         }
+        
 
       .tabs-item-title {
         font-size: 24px;
@@ -106,13 +110,12 @@
         
     }
 
+    
+
     h4 {
       margin: 0;
       font-style: italic;
     }
-
-    
-
   
 
     .tabs-links { 
@@ -136,10 +139,18 @@
       border-right: 1px solid rgba(249, 255, 253, 0.9);
       background-color: rgba(249, 255, 253, 0.9);
       color: black;
+      
       &:hover {
         background-color: rgba(249, 255, 253, 1);
+        
       }
     }
   }
 }
 
+.tabs-items .tabs-item .tabs-item-selected .tabs-item-selected {
+  @media @mobile {
+    .test();
+    display: block;
+  }
+}
