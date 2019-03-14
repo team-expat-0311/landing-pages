@@ -36,12 +36,13 @@
       display: none; 
       max-width: 100%;
       width: 75%;
+      margin-top: 2rem;
 
         @media @mobile {
           .flex(center, center, column);
           width: 100%;
           text-align: center;
-          .test();
+          
           
         }
         
@@ -54,6 +55,7 @@
 
       .tabs-item-title {
         font-size: 2.5rem;
+        text-align: center;
           
         @media @mobile {
             font-size: 2rem;
@@ -120,14 +122,20 @@
 
     .tabs-links { 
       display: flex;
+      margin: 0 auto;/// fixed issues
+      justify-content: center;///fixed issues
       background-color: grey;
+      max-width: 0%;
+      width: 100%;
+      position: relative;
     }
 
     .tabs-link {
       padding: 20px 25px;
-      font-size: 24px;
+      // justify-content: center;
+      font-size: 12px;
       background-color: rgba(0, 0, 0, 0.7);
-      border-right: 1px solid rgba(249, 255, 253, 0.9);
+      border-right: 1px solid rgba(166, 168, 167, 0.9);
       color: rgba(249, 255, 253, 0.9);
       cursor: pointer;
       &:hover {
@@ -137,20 +145,14 @@
     .tabs-link-selected {
       z-index: 2;
       border-right: 1px solid rgba(249, 255, 253, 0.9);
-      background-color: rgba(249, 255, 253, 0.9);
+      background-color: rgba(61, 125, 177, 0.5);
       color: black;
       
       &:hover {
-        background-color: rgba(249, 255, 253, 1);
+        background-color: rgba(61,189, 177, .5);
         
       }
     }
   }
 }
 
-.tabs-items .tabs-item .tabs-item-selected .tabs-item-selected {
-  @media @mobile {
-    .test();
-    display: block;
-  }
-}

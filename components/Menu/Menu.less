@@ -24,13 +24,15 @@
   
 
   @media @mobile {
-    display: inline-block;
-    margin: 0;
+    display: flex;
+   align-self: center;
+    margin: 0 auto;
     max-width: 100%;
     width: 100%;
-    position: relative;
-    align-self: center;
+    position: absolute;
+    right: 5%;
     min-height: 10%;
+    margin-top: 5rem;
     
 
   }
@@ -43,11 +45,12 @@
   
     @media @mobile {
     .flex(center, space-between, column);
+    margin: 0 auto;
     margin-top: 0;
     max-width: 100%;
     width: 100%;
     position: absolute;
-    right: 46%;
+    // right: 46%;
     
     
   }

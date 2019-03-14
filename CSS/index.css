@@ -1,4 +1,5 @@
 .width-100 {
+  max-width: 100%;
   width: 100%;
 }
 *,
@@ -109,13 +110,15 @@ body {
 }
 @media ( max-width: 515px ) {
   .menu {
-    display: inline-block;
-    margin: 0;
+    display: flex;
+    align-self: center;
+    margin: 0 auto;
     max-width: 100%;
     width: 100%;
-    position: relative;
-    align-self: center;
+    position: absolute;
+    right: 5%;
     min-height: 10%;
+    margin-top: 5rem;
   }
 }
 .menu ul {
@@ -128,11 +131,11 @@ body {
     justify-content: center;
     align-items: space-between;
     flex-direction: column;
+    margin: 0 auto;
     margin-top: 0;
     max-width: 100%;
     width: 100%;
     position: absolute;
-    right: 46%;
   }
 }
 .menu ul li {
@@ -182,7 +185,6 @@ body {
 }
 @media ( max-width: 515px ) {
   .container {
-    max-width: 100%;
     width: 100%;
   }
 }
@@ -216,6 +218,7 @@ body {
   cursor: pointer;
 }
 .inner {
+  max-width: 100%;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -256,7 +259,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 11rem;
+    margin-top: 16rem;
     max-width: 100%;
     width: 100%;
   }
@@ -676,7 +679,7 @@ footer {
 }
 @media ( max-width: 515px ) {
   .aboutH2 {
-    margin-top: 5rem;
+    margin-top: 3rem;
   }
 }
 @media ( max-width: 515px ) {
@@ -743,6 +746,7 @@ body {
   display: none;
   max-width: 100%;
   width: 75%;
+  margin-top: 2rem;
 }
 @media ( max-width: 515px ) {
   .section .tabs .tabs-item {
@@ -752,7 +756,6 @@ body {
     flex-direction: column;
     width: 100%;
     text-align: center;
-    border: 1px solid red;
   }
 }
 .section .tabs .tabs-item .tabs-item-title {
@@ -762,6 +765,7 @@ body {
 }
 .section .tabs .tabs-item .tabs-item-title {
   font-size: 2.5rem;
+  text-align: center;
 }
 @media ( max-width: 515px ) {
   .section .tabs .tabs-item .tabs-item-title {
@@ -823,13 +827,18 @@ body {
 }
 .section .tabs .tabs-links {
   display: flex;
+  margin: 0 auto;
+  justify-content: center;
   background-color: grey;
+  max-width: 0%;
+  width: 100%;
+  position: relative;
 }
 .section .tabs .tabs-link {
   padding: 20px 25px;
-  font-size: 24px;
+  font-size: 12px;
   background-color: rgba(0, 0, 0, 0.7);
-  border-right: 1px solid rgba(249, 255, 253, 0.9);
+  border-right: 1px solid rgba(166, 168, 167, 0.9);
   color: rgba(249, 255, 253, 0.9);
   cursor: pointer;
 }
@@ -839,15 +848,9 @@ body {
 .section .tabs .tabs-link-selected {
   z-index: 2;
   border-right: 1px solid rgba(249, 255, 253, 0.9);
-  background-color: rgba(249, 255, 253, 0.9);
+  background-color: rgba(61, 125, 177, 0.5);
   color: black;
 }
 .section .tabs .tabs-link-selected:hover {
-  background-color: #f9fffd;
-}
-@media ( max-width: 515px ) {
-  .tabs-items .tabs-item .tabs-item-selected .tabs-item-selected {
-    border: 1px solid red;
-    display: block;
-  }
+  background-color: rgba(61, 189, 177, 0.5);
 }
