@@ -59,17 +59,20 @@ body {
     justify-content: center;
     align-items: space-between;
     flex-direction: column-reverse;
-    position: absolute;
+    position: relative;
     margin-top: 2rem;
     text-align: center;
     top: -10%;
+  }
+  .header h1 {
+    margin-left: 0;
   }
 }
 .header h1 {
   display: none;
   height: 100%;
-  font-size: 48px;
-  margin-left: -3rem;
+  font-size: 60px;
+  margin-left: 0.5rem;
 }
 @media ( max-width: 515px ) {
   .header h1 {
@@ -81,9 +84,15 @@ body {
     width: 100%;
     top: 10%;
     text-align: center;
+    margin-left: -1.5rem;
   }
   .header h1 .fas {
     margin-bottom: 1rem;
+  }
+  .header h1 .fa-globe-americas {
+    font-size: 48px;
+    text-align: center;
+    right: 5%;
   }
 }
 .menu-button {
@@ -137,6 +146,10 @@ body {
     width: 100%;
     position: absolute;
   }
+  .menu ul:hover {
+    background-color: rgba(231, 237, 242, 0.6);
+    color: black;
+  }
 }
 .menu ul li {
   list-style-type: none;
@@ -157,7 +170,34 @@ body {
     padding: 1rem;
     background-color: #EDF0EE;
     max-width: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #f9fffd;
+    margin: 10px 30px 20px;
+    cursor: pointer;
+    width: 100px;
+    font-size: 1rem;
+    border-radius: 10px;
+    text-decoration: none;
+    border: 1px solid grey;
+    margin: 0.2rem;
+    align-self: center;
     width: 100%;
+    background-color: rgba(150, 133, 194, 0.7);
+  }
+  .menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  .menu ul li a:hover {
+    color: black;
+  }
+  .menu ul li:hover {
+    background-color: rgba(85, 182, 199, 0.3);
+    color: rgba(0, 0, 0, 0.7);
   }
 }
 @media ( max-width: 515px ) {
@@ -201,7 +241,7 @@ body {
   border: 1px solid grey;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   width: 40%;
 }
 .container .button1:hover {
@@ -244,9 +284,36 @@ body {
   text-decoration: none;
   color: grey;
 }
+.intro h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2px;
+}
+.intro .run {
+  position: relative;
+  width: 60%;
+  height: 0.3rem;
+  border: 2px solid black;
+  background-color: black;
+  border-radius: 15%;
+  margin-right: 2rem;
+}
+@media ( max-width: 515px ) {
+  .intro .run {
+    display: none;
+  }
+}
 .intro h3 {
   text-align: center;
   width: 90%;
+}
+@media ( max-width: 515px ) {
+  .intro h3 {
+    width: 80%;
+    margin: 0;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
 }
 @media ( max-width: 515px ) {
   .intro {
@@ -269,11 +336,20 @@ body {
 }
 @media ( max-width: 515px ) and ( max-width: 515px ) {
   .intro h2 {
-    margin-top: 3rem;
+    margin: 0;
+    margin-left: 1.8rem;
+    margin-top: -2rem;
+    margin-bottom: 2px;
+    font-size: 1.5rem;
   }
 }
 .intro h1 {
   color: black;
+  font-size: 4.5rem;
+  align-self: center;
+  margin: 0;
+  margin-left: 2rem;
+  margin-bottom: -5;
 }
 @media ( max-width: 515px ) {
   .intro h1 {
@@ -312,15 +388,15 @@ body {
   .style {
     max-width: 100%;
     width: 100%;
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 }
 .style h2 {
-  top: 30%;
+  top: 20%;
   position: absolute;
   text-align: center;
   font-size: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
   text-transform: uppercase;
 }
 .style .content {
@@ -633,7 +709,7 @@ footer {
 @media ( max-width: 515px ) {
   .style .aboutIntro {
     width: 100%;
-    margin-top: 2rem;
+    margin-top: 0;
   }
 }
 .style h2 {
@@ -647,22 +723,39 @@ footer {
     max-width: 100%;
     width: 80%;
     margin-top: 2rem;
+    margin-bottom: 1rem;
+    border: 1px solid red;
   }
 }
 .style .content {
   display: none;
   font-size: 0.6rem;
 }
+.aboutH2 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
 @media ( max-width: 515px ) {
   .aboutH2 {
-    margin-top: 0;
+    display: none;
   }
+}
+.aboutArticle {
+  margin-top: 1rem;
 }
 @media ( max-width: 515px ) {
   .aboutArticle {
     max-width: 100%;
     width: 80%;
     text-align: center;
+  }
+}
+.footer-about {
+  margin-left: 3rem;
+}
+@media ( max-width: 515px ) {
+  .footer-about {
+    margin-left: 0;
   }
 }
 .about-style1 img {

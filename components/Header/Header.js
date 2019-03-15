@@ -1,1 +1,1 @@
-TweenMax.from('.button1', 4, {top:'0%'});
+// TweenMax.from('.button1', 4, {top:'0%'});

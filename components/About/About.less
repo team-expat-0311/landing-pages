@@ -16,7 +16,7 @@
   .aboutIntro {
     @media @mobile {
       width: 100%;
-      margin-top: 2rem;
+      margin-top: 0;
     }
   }
 
@@ -30,7 +30,10 @@
     @media @mobile {   
       max-width: 100%;  
       width: 80%; 
-      margin-top: 2rem;            
+      margin-top: 2rem; 
+      margin-bottom: 1rem;    
+      
+      .test();
     }  
   }
 
@@ -41,17 +44,34 @@
 }
 
 .aboutH2 {
+  
+  margin-top: 4rem;
+  margin-bottom: 4rem;
   @media @mobile {
-    margin-top: 0;
+   
+   display: none;
+   
+   
   }
 }
  
 .aboutArticle {
+  margin-top: 1rem; 
+  
   @media @mobile {   
     max-width: 100%;  
     width: 80%; 
     text-align: center;            
   }  
+}
+
+.footer-about {
+  
+  margin-left: 3rem;
+
+   @media @mobile {
+     margin-left: 0;
+   }
 }
 
 // Individual box colors

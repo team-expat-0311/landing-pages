@@ -12,34 +12,54 @@
   z-index: 2;
   margin-top: -2rem; 
 
+  
+
   @media @mobile {
     max-width: 100%;
     .flex(center, space-between, column-reverse);
-    position: absolute;
+    position: relative;
     margin-top: 2rem;
     text-align: center;
     top: -10%; // current option 
+
+    h1 {
+      margin-left: 0;
+    }
   }
 
 
   h1 {
+    
     display: none;
     height:100%;
-    font-size: 48px;
-    margin-left: -3rem;
-    
+    font-size: 60px;
+    margin-left: .5rem;
 
-    @media @mobile {
+    @media @mobile {///////////////mobile header
+      
       .flex(center, center, row);
+      
       max-width: 100%;
       width: 100%;
       top: 10%;
       text-align: center;
-        .fas {
+      margin-left: -1.5rem;
+      
+       .fas {
           margin-bottom: 1rem;
+        }
+
+        .fa-globe-americas { // current
+          // test();
+          font-size: 48px;
+          text-align: center;
+          right: 5%;
+          
         }
 
     }
   }
+
+  
 
 }
