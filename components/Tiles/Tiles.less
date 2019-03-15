@@ -4,29 +4,19 @@
     // max-width: 100%;  
     width: 100%; 
   }
-}
-// the whole container for inner elements
 
-.cta {
- position: absolute;
- right: 30%;
- bottom: 80%;
-  button {
-    .custom-button();
-    height: 3rem;
-    cursor: pointer; 
-    }
-
-  @media @mobile { 
-    display: none; 
-  } 
-
-  a {
-    text-decoration: none;
-    color: black;
-    cursor: pointer; 
+  .button1 {
+    position: relative;
+    .custom-button(100px);
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    width: 40%;
+    
+    
   }
 }
+
 
 .inner {
   .width-100();
@@ -59,6 +49,12 @@
     color: grey;
   }
 
+  h3 {
+   
+    text-align: center;
+    width: 90%;
+  }
+
   @media @mobile {
     .flex(center, center, column);
     margin-top: 16rem;
@@ -67,6 +63,11 @@
     h2 {
       text-align: center;
       width: 80%;
+      margin-top: 7rem;
+
+      @media @mobile {
+        margin-top: 3rem;
+      }
     }
 
     p {
@@ -76,28 +77,6 @@
 
   }
 
-  .intro-button {
-    .flex(center, center, column);
-    width: 100%;
-    button {
-      .custom-button();
-      visibility: hidden;
-    }
-
-
-    @media @mobile {
-      button {
-      visibility: visible;
-      border-radius: 15%;
-      width: 10rem;
-      height: 4rem;
-      font-size: 1.6rem;
-      align-self: center;
-      cursor: pointer;
-      }
-
-    }
-  }
   
     h1 {
       color: black;
@@ -147,6 +126,7 @@
   }
   
   h2 {
+    
     top: 30%;
     position: absolute;
     text-align: center;
@@ -154,6 +134,8 @@
     margin-bottom: 1rem;
     text-transform: uppercase;
     // z-index: 2;
+
+    
     
   }
 
@@ -169,7 +151,7 @@
 }
 
 // Individual box colors
-.style1 {
+.sstyle1 {
 
   &:hover {
     transform: scale(1.1);
@@ -200,7 +182,7 @@
 }
 
   
-  .style2 {
+  .sstyle2 {
   
     &:hover {
       transform: scale(1.1);
@@ -229,7 +211,7 @@
     }
   }
 
-  .style3 {
+  .sstyle3 {
   
     &:hover {
       transform: scale(1.1);
@@ -258,7 +240,7 @@
     }
   }
 
-  .style4 {
+  .sstyle4 {
   
     &:hover {
       transform: scale(1.1);
@@ -288,7 +270,7 @@
   }
 
 
-  .style5 {
+  .sstyle5 {
   
     &:hover {
       transform: scale(1.1);
@@ -320,7 +302,7 @@
     }
   }
 
-  .style6 {
+  .sstyle6 {
   
     &:hover {
       transform: scale(1.1);
@@ -352,7 +334,7 @@
     }
   }
 
-  .style7 {
+  .sstyle7 {
   
     &:hover {
       transform: scale(1.1);
@@ -384,7 +366,7 @@
     }
   }
 
-  .style8 {
+  .sstyle8 {
   
     &:hover {
       transform: scale(1.1);
@@ -417,7 +399,7 @@
     }
   }
 
-.style9 {
+.sstyle9 {
 
   &:hover {
     transform: scale(1.1);
@@ -449,4 +431,11 @@
       display: none
     }
 }
+
+
+
+
+
+
+
 
